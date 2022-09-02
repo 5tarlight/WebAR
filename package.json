@@ -7,9 +7,10 @@
     "start": "webpack serve --mode=production --config=webpack.config.js",
     "build": "webpack --config=webpack.config.js --mode=production",
     "dev-server": "webpack serve --mode=development --config=webpack.config.js",
-    "dev": "npm run dev-server"
+    "dev": "npm run dev-server",
+    "watch": "nodemon --exec \"yarn build & yarn start\""
   },
-  "author": "Zappar Limited",
+  "author": "YEAHx4",
   "license": "MIT",
   "dependencies": {
     "@zappar/zappar-threejs": "2.0.1",
@@ -21,6 +22,7 @@
     "file-loader": "^6.2.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
+    "nodemon": "^2.0.19",
     "style-loader": "^3.3.1",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2",
